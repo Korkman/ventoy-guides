@@ -159,6 +159,8 @@ For a clean shutdown, the VHD housing filesystems must be closed. `initramfs-too
   ```
 - `sudo chmod +x "/lib/systemd/system-shutdown/VentUbuntuVHD.shutdown"`
 
+Done. [Skip to step 4](#step-4-customize-grub-inside-and-outside-vm-boot-mode).
+
 ### Open VHD files at boot: Variant for Dracut
 Create a dracut module:
 - `sudo mkdir /usr/lib/dracut/modules.d/99ventubuntu`
@@ -247,7 +249,7 @@ Script to move the mounts into the rootfs:
 - `sudo chattr +i "/mnt/Ventoy" "/mnt/VentMore"`
 - `sudo update-initramfs -u -k all` # Update the initramfs
 
-## Step 4: customize GRUB inside and outside VM boot mode
+## Step 4: Customize GRUB inside and outside VM boot mode
 Inside the VM, we simplify the GRUB search, too, so `update-grub` cannot get confused:
 - `sudo editor "/etc/grub.d/07-VentUbuntu"`
   ```sh
