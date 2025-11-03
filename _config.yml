@@ -2,8 +2,10 @@ title: "Korkman's Ventoy Guides"
 description: ""
 tagline: ""
 markdown: GFM
-remote_theme: jekyll/minima@1e8a445
+remote_theme: jekyll/minima@bf9ef98
 minima:
     skin: dark
+    nav_pages:
+        - none
 plugins:
 - jekyll-remote-theme
