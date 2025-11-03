@@ -1,0 +1,79 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Code block copy buttons (as before)
+  document.querySelectorAll('pre > code').forEach(function(codeBlock) {
+    var button = document.createElement('button');
+    button.innerText = 'Copy';
+    button.className = 'copy-btn';
+
+    button.addEventListener('click', function() {
+      navigator.clipboard.writeText(codeBlock.innerText).then(() => {
+        button.innerText = 'Copied!';
+        setTimeout(() => { button.innerText = 'Copy'; }, 2000);
+      }, () => { button.innerText = 'Error'; });
+    });
+
+    var pre = codeBlock.parentNode;
+    pre.style.position = 'relative';
+    pre.appendChild(button);
+  });
+
+  document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(function(heading) {
+    if (!heading.id) return; // Needs an id!
+    // Create wrapper
+    var wrapper = document.createElement('div');
+    wrapper.className = 'heading-anchor-wrapper';
+
+    // Create link
+    var anchor = document.createElement('a');
+    anchor.className = 'heading-anchor-link';
+    anchor.href = '#' + heading.id;
+    anchor.title = 'Jump to this section';
+    anchor.innerText = '🔗';
+
+    // Move the heading inside the wrapper, and add the anchor link at the start
+    heading.parentNode.insertBefore(wrapper, heading);
+    wrapper.appendChild(anchor);
+    wrapper.appendChild(heading);
+  });
+});
+</script>
+<style>
+.copy-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  opacity: 0.15;
+  transition: opacity 0.2s;
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 4px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  z-index: 1;
+}
+.copy-btn:hover, .copy-btn:focus {
+  opacity: 0.9;
+}
+.heading-anchor-link {
+position: absolute;
+  left: -34px;
+  top: 3px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  text-decoration: none !important;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 1em;
+}
+.heading-anchor-link:hover, .heading-anchor-link:focus {
+  opacity: 0.90;
+}
+.heading-anchor-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+</style>
