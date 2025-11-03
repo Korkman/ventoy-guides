@@ -30,11 +30,16 @@ document.addEventListener('DOMContentLoaded', function() {
     anchor.href = '#' + heading.id;
     anchor.title = 'Jump to this section';
     anchor.innerText = '🔗';
-
+    
+    wrapper.appendChild(anchor);
+    heading.prepend(wrapper);
+    
     // Move the heading inside the wrapper, and add the anchor link at the start
+    /*
     heading.parentNode.insertBefore(wrapper, heading);
     wrapper.appendChild(anchor);
     wrapper.appendChild(heading);
+    */
   });
 });
 </script>
@@ -59,22 +64,20 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 .heading-anchor-link {
 position: absolute;
-  left: -34px;
-  top: 3px;
+  left: -35px;
+  top: 5px;
   opacity: 0;
   transition: opacity 0.2s;
   text-decoration: none !important;
   color: #fff;
-  padding: 4px 8px;
-  font-size: 1em;
+  font-size: 24px;
 }
 .heading-anchor-link:hover, .heading-anchor-link:focus {
   opacity: 0.90;
 }
 .heading-anchor-wrapper {
   position: relative;
-  display: flex;
-  align-items: center;
+  display: block;
 }
 .site-nav .page-link {
   max-width: 100px;
