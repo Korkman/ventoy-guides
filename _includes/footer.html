@@ -76,4 +76,18 @@ position: absolute;
   display: flex;
   align-items: center;
 }
+.site-nav .page-link {
+  max-width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media screen and (min-width: 600px) {
+  .site-nav .page-link {
+    display: inline-block;
+  }
+}
+.post-header {
+  display: none;
+}
 </style>
