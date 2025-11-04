@@ -52,7 +52,7 @@ USB boot to verify the custom Ventoy menu works (access via F6).
 
 - Have [UniGetUI](https://www.marticliment.com/unigetui/) install your favorite tools, create a `.ubundle` file \
   ... and / or have portable apps on the VentMore partition
-- Manage Windows Updates by [blocking](https://www.sordum.org/9470/windows-update-blocker-v1-8/) and unblocking them. Prefer doing updates when booted virtually and with fast connectivity. Always do updates before surfing the internet!
+- Manage Windows Updates by [blocking](https://www.sordum.org/9470/windows-update-blocker-v1-8/) ([download](https://www.sordum.org/downloads/?st-windows-update-blocker)) and unblocking them. Prefer doing updates when booted virtually and with fast connectivity. Always do updates before surfing the internet!
 
 ## Up next: Ubuntu
 Continue with [Part 3: Install Ubuntu (or Debian) along Ventoy in VHD files](03-ubuntu.md)
