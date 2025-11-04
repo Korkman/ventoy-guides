@@ -11,7 +11,7 @@ Run VirtualBox
 - Set preferred username, password, host and domain name
 - Do not auto-install guest additions - at the time of writing the script is broken and will cause an error after installation, guest integration is mostly preinstalled anyways
 - Change virtual disk type to VHD, check "pre-allocate full size"
-- Make it 30 GiB file or bigger in size
+- Make it 30 GiB or bigger in size
 - Finish, wait for the install to complete, shutdown the VM
 
 ## Step 2: Move the bootloader to `VentUbuntuBoot.vhd`
