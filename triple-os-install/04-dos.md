@@ -7,7 +7,7 @@ Run VirtualBox
 - New virtual machine
 - Name it VentDos
 - For VM folder, use the `Ventoy` partition (VirtualBox will create a directory "VentDos")
-  - This is not a typo, the `VentDos` partition is reserved to share files with DOS
+  - This is not a typo, the `VENTFAT` partition is reserved to *share files* with DOS
   - Don't use `VentMore` either, because it is outside the 128 GiB limit
 - Choose the FD##LIVE.iso install ISO
 - Change virtual disk type to VHD, check "pre-allocate full size"
