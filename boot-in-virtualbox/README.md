@@ -117,7 +117,6 @@ The USB drive reappears in `explorer.exe`
 You will have to offline and online your USB drive manually as needed.
 
 ### Virtual USB BIOS boot on Linux
-Read [warning](#warning-for-windows-and-macos-users) first. Then go on.
 
 #### Create the VMDK
 - Plug in your USB drive
@@ -157,6 +156,7 @@ Run VirtualBox
 - Finish
 
 ### Virtual USB BIOS boot on macOS
+Read [warning](#warning-for-windows-and-macos-users) first. Then go on.
 
 #### Create the VMDK
 - Plug in your USB drive
