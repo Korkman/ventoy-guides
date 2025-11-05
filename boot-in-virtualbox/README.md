@@ -177,6 +177,7 @@ Read [warning](#warning-for-windows-and-macos-users) first. Then go on.
 
 #### Attach the VMDK
 Run VirtualBox
+- `sudo VirtualBox`
 - Create new VM
 - Name it "USB BIOS boot"
 - Do not select any install media
