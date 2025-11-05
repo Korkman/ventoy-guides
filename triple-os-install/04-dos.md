@@ -61,6 +61,9 @@ On host
 
 The FreeDOS VHD will appear as drive `C:`, the shared partition `VENTFAT` will appear as floppy drive `B:` - both are writable.
 
+## A quirk to be aware of
+- Since grub4dos has limited functionality when it comes to exFAT, the modification time of the VHD file will not update when altered by DOS. Since size is fixed as well, the VHD looks untouched from the outside. This can be a problem if you use backup tools which skip files based on this metadata.
+
 ## Congratulations
 If you successfully followed the guide, you have a very complete set of portable OS in your pocket and learned alot about the power of GRUB, grub4dos and how the Debian boot process can be modified in significant ways.
 
