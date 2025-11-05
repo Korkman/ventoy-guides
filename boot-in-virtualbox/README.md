@@ -69,10 +69,7 @@ Read [warning](#warning-for-windows-and-macos-users) first. Then go on.
   ```powershell
   cd "C:\Program Files\Oracle\VirtualBox\"
   
-  .\VBoxManage.exe createmedium disk \
-  --filename "C:\VM Disks\usb-pny-pro-elite-512g-phy3.vmdk" \
-  --format VMDK --variant RawDisk \
-  --property RawDrive=\\.\PhysicalDrive3
+  .\VBoxManage.exe createmedium disk --filename "C:\VM Disks\usb-pny-pro-elite-512g-phy3.vmdk" --format VMDK --variant RawDisk --property RawDrive=\\.\PhysicalDrive3
   ```
 #### Attach the VMDK
 Run VirtualBox
