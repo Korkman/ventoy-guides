@@ -25,6 +25,8 @@ Enable Devices > Shared Clipboard > Bidirectional clipboard in all VMs for comfo
 
 Remove Hyper-V components (temporarily) from Windows for best performance.
 
+For debugging and testing, also refer to [How to boot USB drives in VirtualBox](../boot-in-virtualbox/)
+
 ## Can I use Hyper-V instead? VMWare Workstation? QEMU?
 As long as fixed-size VHD files are produced, anything should work.
 
